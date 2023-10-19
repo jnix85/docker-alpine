@@ -22,7 +22,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.12 -f Dockerfile .
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
@@ -34,7 +34,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.13 -f Dockerfile .
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
@@ -46,7 +46,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.14 -f Dockerfile .
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
@@ -58,7 +58,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.15 -f Dockerfile .
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
@@ -70,7 +70,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.16 -f Dockerfile .
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
@@ -82,7 +82,7 @@ git clone git@github.com:jnix85/docker-alpine.git alpine
 cd alpine
 docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.17 -f Dockerfile . 
 cd ..
-rm -Rf alpine '''
+rm -Rf alpine'''
           }
         }
 
