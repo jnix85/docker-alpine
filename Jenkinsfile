@@ -9,6 +9,7 @@ pipeline {
     stage('Update Git') {
       steps {
         sh 'git clone git@github.com:jnix85/docker-alpine.git alpine-build'
+        git(url: 'git@github.com:jnix85/docker-alpine.git', branch: 'main', credentialsId: 'github-ssh')
       }
     }
 
