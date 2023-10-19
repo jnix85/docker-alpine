@@ -42,12 +42,12 @@ docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpcons
       }
     }
 
-    stage('Build 3.16') {
+    stage('Build 3.15') {
       steps {
         sh '''cd alpine-build
-git checkout 3.16
+git checkout 3.15
 /usr/local/bin/docker-login 
-docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.16 -f Dockerfile .
+docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpconsulted.com/library/alpine/3.15 -f Dockerfile .
 '''
       }
     }
@@ -71,7 +71,7 @@ docker buildx build -t --push --platform linux/amd64,linux/arm64 registry.jpcons
 '''
       }
     }
-    
+
     stage('Build 3.18') {
       steps {
         sh '''cd alpine-build
