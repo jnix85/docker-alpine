@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Update Git') {
       steps {
-        sh 'git clone'
+        sh 'echo Building'
       }
     }
 
