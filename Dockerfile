@@ -1,6 +1,6 @@
 FROM alpine:3.18
 
-RUN apk update && \
-    apk upgrade && \
-    apk add bash && \
-    apk cache purge 
+RUN apk update 
+RUN apk upgrade
+RUN apk add bash
+RUN apk cache purge 
