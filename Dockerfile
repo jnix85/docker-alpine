@@ -1,3 +1,5 @@
 FROM alpine:3.17
 
-RUN apk add --no-cache bash 
+COPY update.sh /update.sh
+RUN sh /update.sh && \
+    rm -Rf /update.sh
