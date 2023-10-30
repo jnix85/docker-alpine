@@ -1,6 +1,4 @@
 FROM alpine:3.17
 
-RUN apk update 
-RUN apk upgrade
-RUN apk add bash
-RUN apk cache purge 
+RUN apk add --no-cache bash && \
+    apk upgrade --no-cache
