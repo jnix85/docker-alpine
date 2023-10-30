@@ -9,4 +9,5 @@ RUN reposwitch local && \
     apk upgrade && \
     apk add bash && \
     apk cache clean && \
-    apk cache purge
+    apk cache purge && \
+    reposwitch default
