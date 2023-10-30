@@ -1,13 +1,7 @@
 FROM alpine:3.15
 
-ADD reposwitch /usr/local/bin/reposwitch
-
-RUN chmod +x /usr/local/bin/reposwitch
-
-RUN reposwitch local && \
-    apk update && \
+RUN apk update && \
     apk upgrade && \
     apk add bash && \
     apk cache clean && \
-    apk cache purge && \
-    reposwitch default
+    apk cache purge 
