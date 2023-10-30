@@ -1,5 +1,12 @@
 FROM alpine:3.17
 
-COPY update.sh /update.sh
-RUN sh /update.sh && \
-    rm -Rf /update.sh
+ADD reposwitch /usr/local/bin/reposwitch
+
+RUN chmod +x /usr/local/bin/reposwitch
+
+RUN reposwitch local && \
+    apk update && \
+    apk upgrade && \
+    apk add bash && \
+    apk cache clean && \
+    apk cache purge
